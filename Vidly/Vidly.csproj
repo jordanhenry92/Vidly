@@ -169,9 +169,22 @@
     <Compile Include="Migrations\202007271836272_AddBirthDateToCustomer.designer.cs">
       <DependentUpon>202007271836272_AddBirthDateToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007271904019_AddGenreTable.cs" />
+    <Compile Include="Migrations\202007271904019_AddGenreTable.designer.cs">
+      <DependentUpon>202007271904019_AddGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007271909579_AddAdditionalMovieProperties.cs" />
+    <Compile Include="Migrations\202007271909579_AddAdditionalMovieProperties.designer.cs">
+      <DependentUpon>202007271909579_AddAdditionalMovieProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007271911140_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\202007271911140_PopulateGenresTable.designer.cs">
+      <DependentUpon>202007271911140_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -215,7 +228,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Movies\ListMovies.cshtml" />
     <Content Include="Views\Customers\ListCustomers.cshtml" />
-    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerDetails.cshtml" />
+    <Content Include="Views\Movies\MovieDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -260,6 +274,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007271836272_AddBirthDateToCustomer.resx">
       <DependentUpon>202007271836272_AddBirthDateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007271904019_AddGenreTable.resx">
+      <DependentUpon>202007271904019_AddGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007271909579_AddAdditionalMovieProperties.resx">
+      <DependentUpon>202007271909579_AddAdditionalMovieProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007271911140_PopulateGenresTable.resx">
+      <DependentUpon>202007271911140_PopulateGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

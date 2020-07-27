@@ -10,15 +10,15 @@
     <thead>
         <tr>
             <th>Movie Name</th>
-            <th>Id</th>
+            <th>Genre</th>
         </tr>
     </thead>
 
 @foreach (var movie in Model)
 {
     <tr>
-        <td>@movie.Name</td>
-        <td>@movie.Id</td>
+        <td>@Html.ActionLink(movie.Name, "MovieDetails", "Movies", new { id = movie.Id }, null)</td>
+        <td>@movie.Genre.Name</td>
     </tr>
 }
 </table>
