@@ -157,6 +157,14 @@
     <Compile Include="Migrations\202007271559214_ChangedNameOfDbSets.designer.cs">
       <DependentUpon>202007271559214_ChangedNameOfDbSets.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007271625038_ChangedMembershipTypeDiscountToName.cs" />
+    <Compile Include="Migrations\202007271625038_ChangedMembershipTypeDiscountToName.designer.cs">
+      <DependentUpon>202007271625038_ChangedMembershipTypeDiscountToName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007271626367_PopulateMembershipTypeNames.cs" />
+    <Compile Include="Migrations\202007271626367_PopulateMembershipTypeNames.designer.cs">
+      <DependentUpon>202007271626367_PopulateMembershipTypeNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -239,6 +247,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007271559214_ChangedNameOfDbSets.resx">
       <DependentUpon>202007271559214_ChangedNameOfDbSets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007271625038_ChangedMembershipTypeDiscountToName.resx">
+      <DependentUpon>202007271625038_ChangedMembershipTypeDiscountToName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007271626367_PopulateMembershipTypeNames.resx">
+      <DependentUpon>202007271626367_PopulateMembershipTypeNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
